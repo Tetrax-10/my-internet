@@ -230,13 +230,7 @@ body:has(#urlbar[open]) {
   margin-right: 170px !important;
 }
 
-body:has(#urlbar:not([open])):has(
-    #urlbar:not([open]):hover,
-    #nav-bar-customization-target:hover,
-    .titlebar-buttonbox-container:hover,
-    #nav-bar:hover,
-    toolbarbutton[open="true"]
-  ) {
+body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customization-target:hover, .titlebar-buttonbox-container:hover, #nav-bar:hover, toolbarbutton[open="true"]) {
   .titlebar-buttonbox-container {
     width: 150px !important;
     padding-left: 20px !important;
@@ -295,20 +289,14 @@ tabpanels .browserStack browser {
 }
 
 /* Previous animation*/
-.browserStack:has(
-    #historySwipeAnimationPreviousArrow:not([style="translate: none;"])
-  )
-  browser {
+.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
   scale: 0.95 !important;
   transform: translateX(3%) !important;
   border-radius: 2em !important;
 }
 
 /* Next animation*/
-.browserStack:has(
-    #historySwipeAnimationNextArrow:not([style="translate: none;"])
-  )
-  browser {
+.browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
   scale: 0.95 !important;
   transform: translateX(-3%) !important;
   border-radius: 2em !important;
@@ -428,20 +416,17 @@ body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)) {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: inset 0 0 10px 10px
-      color-mix(in srgb, var(--focus-outline-color), transparent 80%);
+    box-shadow: inset 0 0 10px 10px color-mix(in srgb, var(--focus-outline-color), transparent 80%);
   }
 
   70% {
     transform: scale(1);
-    box-shadow: inset 0 0 0 2px
-      color-mix(in srgb, var(--focus-outline-color), transparent 50%);
+    box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--focus-outline-color), transparent 50%);
   }
 
   100% {
     transform: scale(1);
-    box-shadow: inset 0 0 10px 10px
-      color-mix(in srgb, var(--focus-outline-color), transparent 80%);
+    box-shadow: inset 0 0 10px 10px color-mix(in srgb, var(--focus-outline-color), transparent 80%);
   }
 }
 
@@ -500,12 +485,7 @@ tab[soundplaying] .tab-background {
     transition: all 0.3s ease-in-out !important;
   }
 
-  &:has(
-    #unified-extensions-button:hover,
-    .unified-extensions-item:hover,
-    [open],
-    #PanelUI-button:hover
-  ) {
+  &:has(#unified-extensions-button:hover, .unified-extensions-item:hover, [open], #PanelUI-button:hover) {
     .unified-extensions-item {
       width: 30px !important;
       padding: inherit !important;
@@ -580,11 +560,7 @@ tab-group:not(:has([selected])) .tab-group-label {
   /*   border: none !important; */
   outline: none !important;
   transition: all 0.2s ease-in-out !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 50%,
-    transparent
-  ) !important;
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
   color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
 }
 
@@ -600,20 +576,12 @@ tab-group:not(:has([selected])) .tab-group-label {
 }
 
 [collapsed=""] .tab-group-label {
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 20%,
-    transparent
-  ) !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
   color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
   border-radius: 7px !important;
 
   &:hover {
-    background: color-mix(
-      in srgb,
-      var(--tab-group-color) 50%,
-      transparent
-    ) !important;
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
     color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
   }
 }
@@ -641,11 +609,7 @@ tab-group:not(:has([selected])) .tab-group-label {
     margin-bottom: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    background: color-mix(
-      in srgb,
-      var(--tab-group-color) 50%,
-      transparent
-    ) !important;
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
     outline: none !important;
   }
   .tab-label {
@@ -654,21 +618,13 @@ tab-group:not(:has([selected])) .tab-group-label {
 
   &[selected="true"] {
     .tab-background {
-      background: color-mix(
-        in srgb,
-        var(--tab-group-color-invert) 40%,
-        transparent
-      ) !important;
+      background: color-mix(in srgb, var(--tab-group-color-invert) 40%, transparent) !important;
     }
   }
 
   &:hover {
     .tab-background {
-      background: color-mix(
-        in srgb,
-        var(--tab-group-color-invert) 50%,
-        transparent
-      ) !important;
+      background: color-mix(in srgb, var(--tab-group-color-invert) 50%, transparent) !important;
     }
   }
 }

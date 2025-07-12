@@ -6,11 +6,7 @@ body,
 }
 
 .segment {
-  background-color: color-mix(
-    in srgb,
-    var(--color-box-body),
-    transparent 50%
-  ) !important;
+  background-color: color-mix(in srgb, var(--color-box-body), transparent 50%) !important;
 }
 
 .secondary-nav {

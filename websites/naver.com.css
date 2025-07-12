@@ -46,21 +46,11 @@ div#shortcutArea.shortcut_area.type_recommend {
 }
 
 /* nv-header-adjustments */
-html.fzoom
-  body
-  div#wrap
-  div#header.ani_fixed
-  div#topSearchWrap.header_inner
-  div#search_area.search_area {
+html.fzoom body div#wrap div#header.ani_fixed div#topSearchWrap.header_inner div#search_area.search_area {
   top: 0vh !important;
 }
 
-html.fzoom
-  body
-  div#wrap
-  div#header
-  div#topSearchWrap.header_inner
-  div#shortcutArea.shortcut_area.type_recommend.is_expanded {
+html.fzoom body div#wrap div#header div#topSearchWrap.header_inner div#shortcutArea.shortcut_area.type_recommend.is_expanded {
   top: 45.3vh !important;
 }
 

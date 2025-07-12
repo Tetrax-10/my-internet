@@ -143,43 +143,24 @@ body[data-theme="light-blue"] {
   --block-header-hover-color: rgba(255, 255, 255, 0.15) !important;
   --block-header-light-color: rgba(255, 255, 255, 0.35) !important;
 }
-main#content.layout--wide
-  div.column-layout
-  div.column-layout__main
-  div#imagelist-container.block {
+main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block {
   border-top-right-radius: 6px !important;
   border-top-left-radius: 6px !important;
 }
 
-main#content.layout--wide
-  div.column-layout
-  div.column-layout__main
-  div#imagelist-container.block
-  a:not(.active) {
+main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block a:not(.active) {
   background: var(--header-link-background) !important;
 }
-main#content.layout--wide
-  div.column-layout
-  div.column-layout__main
-  div#imagelist-container.block
-  a:hover {
+main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block a:hover {
   background: var(--block-header-hover-color) !important;
   color: var(--block-header-link-text-hover-color) !important;
 }
 
-:where(
-  main#content.layout--wide
-    div.column-layout
-    div.column-layout__main
-    div#imagelist-container.block
-    a.active
-) {
+:where(main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block a.active) {
   background: initial;
 }
 
-main#content.layout--wide
-  div#imagelist-container.block
-  section.block__header.page__header.flex {
+main#content.layout--wide div#imagelist-container.block section.block__header.page__header.flex {
   a {
     background: transparent !important;
   }
@@ -188,9 +169,7 @@ main#content.layout--wide
     color: var(--block-header-link-text-hover-color) !important;
   }
 }
-main#content.layout--wide
-  div#imagelist-container.block
-  div.block__header.block__header--light.page__header.flex {
+main#content.layout--wide div#imagelist-container.block div.block__header.block__header--light.page__header.flex {
   a {
     background: transparent !important;
   }
@@ -221,10 +200,7 @@ body[data-theme="light-blue"] {
 }
 
 /*derpy-image page*/
-div#extrameta.image-metabar.flex.flex--wrap.block__header--user-credit.center--layout
-  div
-  span.image_uploader
-  strong {
+div#extrameta.image-metabar.flex.flex--wrap.block__header--user-credit.center--layout div span.image_uploader strong {
   a {
     background: transparent !important;
     border-radius: 3px !important;
@@ -288,22 +264,14 @@ div#extrameta.image-metabar.flex.flex--wrap.block__header--user-credit.center--l
   background: var(--image-options-area-button-hover-nt) !important;
 }
 
-main#content.layout--wide
-  div.layout--narrow
-  div.image-description
-  div.block
-  div.block__content
-  blockquote {
+main#content.layout--wide div.layout--narrow div.image-description div.block div.block__content blockquote {
   border: none !important;
   background: var(--image-options-area-background) !important;
   backdrop-filter: blur(2px) !important;
   border-radius: 3px !important;
 }
 
-main#content.layout--wide
-  div.layout--narrow
-  div#image_tags_and_source.js-tagsauce
-  div.block__header__buttons {
+main#content.layout--wide div.layout--narrow div#image_tags_and_source.js-tagsauce div.block__header__buttons {
   a {
     background: none !important;
   }
@@ -312,10 +280,7 @@ main#content.layout--wide
     color: var(--block-header-link-text-hover-color) !important;
   }
 }
-main#content.layout--wide
-  div.layout--narrow
-  div.js-sourcesauce
-  div#image-source.block {
+main#content.layout--wide div.layout--narrow div.js-sourcesauce div#image-source.block {
   a {
     background: none !important;
   }
@@ -325,10 +290,7 @@ main#content.layout--wide
   }
 }
 
-main#content.layout--wide
-  div.block.block__header
-  .flex.flex--wrap.image-metabar.center--layout
-  div.stretched-mobile-links {
+main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links {
   a.interaction--comments:hover {
     color: var(--pure-hover) !important;
   }
@@ -352,36 +314,23 @@ form#js-comment-form
   border-radius: 0px !important;
 }
 
-main#content.layout--wide
-  div.layout--narrow
-  div.image-description
-  div.block
-  div.block__content
-  pre {
+main#content.layout--wide div.layout--narrow div.image-description div.block div.block__content pre {
   background: var(--image-options-area-background) !important;
   border-radius: 6px !important;
   padding: 12px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
   code {
-    font-family:
-      "Cascadia Code", "Fira Code", "JetBrains Mono", monospace !important;
+    font-family: "Cascadia Code", "Fira Code", "JetBrains Mono", monospace !important;
     font-weight: 600 !important;
     font-variation-settings: "wght" 600 !important;
   }
 }
 
-div#container.layout--center-aligned
-  main#content.layout--wide
-  div.block.block__header
-  .flex.flex--wrap.image-metabar.center--layout
-  div.stretched-mobile-links
-  a {
+div#container.layout--center-aligned main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links a {
   border-radius: 6px;
 }
 
-.stretched-mobile-links:has(a.interaction--upvote.active):has(
-    a.interaction--fave.active
-  ) {
+.stretched-mobile-links:has(a.interaction--upvote.active):has(a.interaction--fave.active) {
   a.interaction--upvote.active {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -466,9 +415,7 @@ form#js-comment-form
   div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper
   div.field
   textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input,
-.block__tab.communication-edit__tab.selected.js-preview-input-wrapper
-  div.field
-  textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
   transition:
     border 0.5s ease,
     border-radius 0.2s ease !important;
@@ -479,12 +426,7 @@ form#js-comment-form
   transition: ease 0.2s !important;
 }
 
-div#container.layout--center-aligned
-  main#content.layout--wide
-  div.block.block__header
-  .flex.flex--wrap.image-metabar.center--layout
-  div.stretched-mobile-links
-  a {
+div#container.layout--center-aligned main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links a {
   transition: all ease 0.2s !important;
 }
 
@@ -529,12 +471,7 @@ main#content.layout--wide div.block.block__header div.stretched-mobile-links {
     background: transparent !important;
   }
 }
-:where(
-  main#content.layout--wide
-    div.block.block__header
-    div.stretched-mobile-links
-    a:hover
-) {
+:where(main#content.layout--wide div.block.block__header div.stretched-mobile-links a:hover) {
   background: revert;
   color: revert;
 }
@@ -553,18 +490,11 @@ main#content.layout--wide div.block.block__header div.stretched-mobile-links {
   background: none !important;
 }
 
-div#container.layout--center-aligned
-  main#content.layout--narrow
-  div.block
-  div.block__header:not(.block__header--light):not(.page__header):not(.flex) {
+div#container.layout--center-aligned main#content.layout--narrow div.block div.block__header:not(.block__header--light):not(.page__header):not(.flex) {
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
-main#content.layout--narrow
-  div.block
-  div.block__header--sub.block__header--light.page__header
-  div.page__info
-  span.js-subscription-target {
+main#content.layout--narrow div.block div.block__header--sub.block__header--light.page__header div.page__info span.js-subscription-target {
   a.js-subscription-link {
     background: transparent !important;
     border-radius: 6px !important;
@@ -588,10 +518,7 @@ main#content.layout--narrow
   }
 }
 
-main#content.layout--narrow
-  div.block
-  div.block__header
-  div.flex.flex--wrap.block__header.block__header--light.page__header {
+main#content.layout--narrow div.block div.block__header div.flex.flex--wrap.block__header.block__header--light.page__header {
   background: transparent !important;
   border-top: solid rgba(0, 0, 0, 0.3) 2px !important;
   border-top-left-radius: 0px !important;
@@ -624,28 +551,17 @@ a.interaction--downvote.disabled {
   opacity: 50% !important;
 }
 
-div.media-box
-  div.media-box__header.media-box__header--link-row
-  a.interaction--comments:hover {
+div.media-box div.media-box__header.media-box__header--link-row a.interaction--comments:hover {
   color: var(--pure-hover) !important;
 }
 a.block__header--single-item:hover {
   background: var(--single-item-bg-hover) !important;
 }
 
-main#content.layout--wide
-  form#searchform.js-search-form
-  div.block
-  div.block__header.flex
-  a:not(:hover) {
+main#content.layout--wide form#searchform.js-search-form div.block div.block__header.flex a:not(:hover) {
   background: transparent !important;
 }
-main#content.layout--wide
-  form#searchform.js-search-form
-  div.block
-  div.block__header.flex
-  div.dropdown.block__header__dropdown-tab
-  div.dropdown__content {
+main#content.layout--wide form#searchform.js-search-form div.block div.block__header.flex div.dropdown.block__header__dropdown-tab div.dropdown__content {
   a {
     background: rgba(0, 0, 0, 0.46) !important;
   }
@@ -661,12 +577,7 @@ main#content.layout--wide
   padding-top: 1px !important;
 }
 hr {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.21),
-    rgba(10, 10, 10, 0.11),
-    rgba(0, 0, 0, 0.21)
-  ) !important;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.21), rgba(10, 10, 10, 0.11), rgba(0, 0, 0, 0.21)) !important;
 }
 
 .block__header--js-tabbed {
@@ -683,14 +594,10 @@ hr {
 .block__tab.communication-edit__tab.selected.js-preview-input-wrapper {
   border: none !important;
 }
-.block__tab.communication-edit__tab.selected.js-preview-input-wrapper
-  div.field
-  textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
   border-radius: 6px !important;
 }
-.block__tab.communication-edit__tab.selected.js-preview-input-wrapper
-  div.field
-  textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input:focus {
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input:focus {
   background: var(--input-color) !important;
   border-radius: 0px !important;
 }

@@ -21,13 +21,7 @@ main,
 section,
 .contents > details,
 #__next,
-body
-  > div
-  > div:not(
-    [data-floating-ui-inert=""],
-    [role="presentation"],
-    [role="dialog"]
-  ),
+body > div > div:not([data-floating-ui-inert=""], [role="presentation"], [role="dialog"]),
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,

@@ -17,9 +17,7 @@ app,
 .sidebar-wrap,
 section,
 [data-testid="software-board.board-container.board.virtual-board.fast-virtual-list.fast-virtual-list-wrapper"],
-[data-component-selector="platform-board-kit.ui.column.draggable-column"]
-  > div
-  > div,
+[data-component-selector="platform-board-kit.ui.column.draggable-column"] > div > div,
 #__next,
 [data-test-id="software-board.board"],
 #root,
@@ -36,15 +34,8 @@ body[data-theme="light"],
 #main,
 .sidebar,
 main,
-[data-testid="issue-activity-feed.feed-display-with-intersection-observer"]
-  > span
-  > span
-  > div,
-[data-testid="issue-activity-feed.feed-display-with-intersection-observer"]
-  > span
-  > span
-  > div
-  > div,
+[data-testid="issue-activity-feed.feed-display-with-intersection-observer"] > span > span > div,
+[data-testid="issue-activity-feed.feed-display-with-intersection-observer"] > span > span > div > div,
 #content,
 #cu-identity,
 section,
@@ -72,10 +63,7 @@ text-div > textarea {
 }
 
 [data-testid="issue-view-sticky-header-container.sticky-header"],
-[data-component-selector="jira-issue-view-layout-templates-pinned-fields-banner-with-grouping-pinned-field-highlight-wrapper"]
-  > div
-  > details
-  > summary {
+[data-component-selector="jira-issue-view-layout-templates-pinned-fields-banner-with-grouping-pinned-field-highlight-wrapper"] > div > details > summary {
   border-radius: 0.5em !important;
   padding: 5px !important;
 }

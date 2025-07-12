@@ -160,25 +160,13 @@ textarea[type="text"],
   background-color: var(--opaque-background) !important;
 }
 
-.enter-new-comment
-  > div
-  > .rooster-wrapper:not(:focus-within)
-  > .rooster-editor,
-.work-item-form-control-content
-  > .work-item-form-control
-  > .rooster-wrapper:not(:focus-within)
-  > .rooster-editor {
+.enter-new-comment > div > .rooster-wrapper:not(:focus-within) > .rooster-editor,
+.work-item-form-control-content > .work-item-form-control > .rooster-wrapper:not(:focus-within) > .rooster-editor {
   background-color: var(--opaque-background) !important;
 }
 
-.enter-new-comment
-  > div
-  > .rooster-wrapper:not(:focus-within)
-  > .rooster-command-bar,
-.work-item-form-control-content
-  > div
-  > .rooster-wrapper:not(:focus-within)
-  > .rooster-command-bar {
+.enter-new-comment > div > .rooster-wrapper:not(:focus-within) > .rooster-command-bar,
+.work-item-form-control-content > div > .rooster-wrapper:not(:focus-within) > .rooster-command-bar {
   opacity: 0 !important;
 }
 

@@ -63,56 +63,16 @@ body,
   /* .thing is required for extra specificity to override the RES rules */
   &.res-commentBoxes .comment .comment.thing,
   &.res-commentBoxes .comment .comment .comment .comment.thing,
-  &.res-commentBoxes
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment.thing,
-  &.res-commentBoxes
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment.thing,
-  &.res-commentBoxes
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment.thing {
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment.thing {
     background-color: transparent !important;
   }
   &.res-commentBoxes .comment.thing,
   &.res-commentBoxes .comment .comment .comment.thing,
   &.res-commentBoxes .comment .comment .comment .comment .comment.thing,
-  &.res-commentBoxes
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment.thing,
-  &.res-commentBoxes
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment
-    .comment.thing {
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment.thing {
     background-color: transparent !important;
   }
 }

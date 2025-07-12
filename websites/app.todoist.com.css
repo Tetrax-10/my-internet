@@ -63,8 +63,7 @@ div[data-expansion-panel-header="true"] {
 }
 
 /* todoist-sidebar hover */
-.app-sidebar-container
-  > div:has(> nav > div > div > div > button[aria-expanded="true"]) {
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) {
   min-width: 24px !important;
   overflow: hidden !important;
   transition:
@@ -73,55 +72,36 @@ div[data-expansion-panel-header="true"] {
     margin 0.3s !important;
 }
 
-.app-sidebar-container
-  > div:not(:hover):has(
-    > nav > div > div > div > button[aria-expanded="true"]
-  ) {
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) {
   width: 24px !important;
   margin: 5px !important;
 }
 
-.app-sidebar-container
-  > div:has(> nav > div > div > div > button[aria-expanded="true"])
-  * {
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) * {
   transition:
     margin 0.3s,
     padding 0.3s !important;
 }
 
-.app-sidebar-container
-  > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"])
-  * {
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) * {
   margin: 0px !important;
   padding: 0px !important;
 }
 
-.app-sidebar-container
-  > div:has(> nav > div > div > div > button[aria-expanded="true"])
-  div[data-expansion-panel-header="true"] {
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
   transition: height 0.3s !important;
   overflow: hidden !important;
 }
 
-.app-sidebar-container
-  > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"])
-  div[data-expansion-panel-header="true"] {
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
   height: 0 !important;
 }
 
-.app-sidebar-container
-  > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"])
-  > nav
-  > div
-  > div
-  > div:has(> button[aria-controls="sidebar"]) {
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) > nav > div > div > div:has(> button[aria-controls="sidebar"]) {
   display: none !important;
 }
 
-.app-sidebar-container
-  > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"])
-  button[aria-label="Settings"]
-  svg {
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) button[aria-label="Settings"] svg {
   opacity: 0 !important;
   transition: opactiy 0.3s !important;
 }

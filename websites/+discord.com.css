@@ -72,9 +72,7 @@ body:has(#channels) [aria-label="User area"] {
   }
 }
 
-body:has([aria-label="Servers sidebar"]:hover)
-  [aria-label="Servers sidebar"]
-  + div:has(nav > #channels) {
+body:has([aria-label="Servers sidebar"]:hover) [aria-label="Servers sidebar"] + div:has(nav > #channels) {
   width: 250px !important;
 }
 

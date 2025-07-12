@@ -62,9 +62,7 @@ button[role="tab"] {
   display: none !important;
 }
 
-[aria-label="Copilot badge"]
-  + div
-  > .js-snippet-clipboard-copy-unpositioned:has(h3) {
+[aria-label="Copilot badge"] + div > .js-snippet-clipboard-copy-unpositioned:has(h3) {
   padding: 1em !important;
 }
 

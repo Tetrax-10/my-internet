@@ -81,9 +81,7 @@ ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer:hover {
   height: 4em !important;
 }
 
-#side-panel:has(
-    ytmusic-tab-renderer[page-type="MUSIC_PAGE_TYPE_TRACK_LYRICS"]
-  ):not(:has(ytmusic-message-renderer:not([style="display: none;"]))) {
+#side-panel:has(ytmusic-tab-renderer[page-type="MUSIC_PAGE_TYPE_TRACK_LYRICS"]):not(:has(ytmusic-message-renderer:not([style="display: none;"]))) {
   right: 0 !important;
   opacity: 1 !important;
 }

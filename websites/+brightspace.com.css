@@ -82,21 +82,11 @@ button.d2l-button {
   background-color: transparent !important;
 }
 
-#ContentModuleTree
-  .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected
-  > a.d2l-le-TreeAccordionItem-anchor::before,
-#ContentModuleTree
-  .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected
-  > a.d2l-le-TreeAccordionItem-anchor:link::before,
-#ContentModuleTree
-  .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected
-  > a.d2l-le-TreeAccordionItem-anchor:visited::before,
-#ContentModuleTree
-  .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected
-  > a.d2l-le-TreeAccordionItem-anchor:hover::before,
-#ContentModuleTree
-  .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected
-  > a.d2l-le-TreeAccordionItem-anchor:focus::before {
+#ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor::before,
+#ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:link::before,
+#ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:visited::before,
+#ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:hover::before,
+#ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:focus::before {
   background: rgba(0, 0, 0, 0.1) !important;
   border-radius: 20px !important;
 }
