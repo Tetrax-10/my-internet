@@ -1,0 +1,29 @@
+name: Format Repository
+
+on:
+    push:
+        branches:
+            - main
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    format:
+        name: Format code
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+                  ref: ${{ github.head_ref }}
+
+            - name: Prettify code
+              uses: creyD/prettier_action@v4.6
+              with:
+                  prettier_options: --write .
+                  commit_message: "gh-actions: format code"
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
