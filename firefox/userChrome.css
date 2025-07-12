@@ -1,40 +1,51 @@
-:root{
+:root {
   appearance: -moz-sidebar !important;
 }
 
-#sidebar-wrapper{
-/*   transition: all 0.3s ease-in-out 0.2s !important; */
+#sidebar-wrapper {
+  /*   transition: all 0.3s ease-in-out 0.2s !important; */
   overflow: hidden !important;
 }
 
-html, body, #main-window, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background:not([selected=""]), #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
+html,
+body,
+#main-window,
+#navigator-toolbox,
+#nav-bar,
+#browser,
+#tabbrowser-tabpanels,
+.tab-background:not([selected=""]),
+#tabbrowser-tabs,
+#sidebar-main,
+body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper {
   background-color: transparent !important;
-/*   background-color: #2e3440 !important; */
+  /*   background-color: #2e3440 !important; */
   background: none !important;
   border: none !important;
 }
 
-body:has(toolbarbutton[expanded]) #sidebar-wrapper{
-/*   transition: all 0.3s ease-in-out !important; */
+body:has(toolbarbutton[expanded]) #sidebar-wrapper {
+  /*   transition: all 0.3s ease-in-out !important; */
   border-radius: 0 1em 1em 0 !important;
 }
 
-
-#tabbrowser-tabbox{
+#tabbrowser-tabbox {
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
 }
 
 /* website view animations */
-#tabbrowser-tabpanels
-  > hbox {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35), filter 0.45s ease-in-out , opacity 0.35s ease-in-out !important;
+#tabbrowser-tabpanels > hbox {
+  transition:
+    all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
+    filter 0.45s ease-in-out,
+    opacity 0.35s ease-in-out !important;
   scale: 0.9 !important;
   opacity: 0;
 }
 
-#tabbrowser-tabpanels > hbox.deck-selected{
+#tabbrowser-tabpanels > hbox.deck-selected {
   scale: 1 !important;
   opacity: 1 !important;
 }
@@ -44,18 +55,18 @@ body:has(toolbarbutton[expanded]) #sidebar-wrapper{
 }
 
 /* URL bar page animation */
-#sidebar-main{
+#sidebar-main {
   transition: all 0.5s ease-in-out !important;
 }
 
-body:has(#urlbar[open]){
+body:has(#urlbar[open]) {
   #tabbrowser-tabpanels {
     pointer-events: none;
     scale: 1.1 !important;
     filter: blur(10px) brightness(70%) !important;
   }
-  
-  #sidebar-main{
+
+  #sidebar-main {
     opacity: 0 !important;
   }
 }
@@ -68,135 +79,139 @@ tab[busy] {
   }
 }
 
-
-#sidebar-main, #tabbrowser-tabbox{
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1), background-color 0.5s ease-in-out 0.3s !important;
+#sidebar-main,
+#tabbrowser-tabbox {
+  transition:
+    all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1),
+    background-color 0.5s ease-in-out 0.3s !important;
   outline: none !important;
   box-shadow: none !important;
 }
 
-body:has(tab[selected="true"][busy]) #tabbrowser-tabbox{
-/*   margin: 2em !important; */
-/*   border: solid white 10px !important; */
-/*   box-shadow: black 0px 0px 50px !important; */
+body:has(tab[selected="true"][busy]) #tabbrowser-tabbox {
+  /*   margin: 2em !important; */
+  /*   border: solid white 10px !important; */
+  /*   box-shadow: black 0px 0px 50px !important; */
   background-color: light-dark(#fff5, #0005) !important;
-/*   outline: solid white -20px inset !important; */
-  
-/*   box-shadow: 0px 0px 20px 1px #fff inset !important; */
+  /*   outline: solid white -20px inset !important; */
+
+  /*   box-shadow: 0px 0px 20px 1px #fff inset !important; */
   border-radius: 1em !important;
   overflow: hidden !important;
 }
 
-#urlbar{
-    transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1), opacity 0.5s ease-in-out !important;
+#urlbar {
+  transition:
+    top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1),
+    opacity 0.5s ease-in-out !important;
 }
 
-body:not(:has(toolbarbutton[expanded])) #urlbar:not([open]){
+body:not(:has(toolbarbutton[expanded])) #urlbar:not([open]) {
   top: -100px !important;
   opacity: 0 !important;
-  
 }
 
-#urlbar[open]{
+#urlbar[open] {
   top: 45vh !important;
   left: 50vw !important;
   transform: translate(-50%, -50%) !important;
   width: 60em !important;
-  #urlbar-background{
+  #urlbar-background {
     border-radius: 1em !important;
     box-shadow: #0008 0 0 100px !important;
     background-color: light-dark(#fffc, #000c) !important;
   }
-  .urlbar-input-container{
-  height: 4em !important;
-}
-
-}
-
-  #navigator-toolbox{
-    transition: all 0.3s ease-in-out !important;
-    height: 0 !important;
-    top: -35px !important;
-    opacity: 0 !important;
+  .urlbar-input-container {
+    height: 4em !important;
   }
+}
 
-body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)), body:has(#urlbar[open]) {
-  #navigator-toolbox{
+#navigator-toolbox {
+  transition: all 0.3s ease-in-out !important;
+  height: 0 !important;
+  top: -35px !important;
+  opacity: 0 !important;
+}
+
+body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)),
+body:has(#urlbar[open]) {
+  #navigator-toolbox {
     height: 3.5em !important;
     top: 0 !important;
     opacity: 1 !important;
   }
 }
 
-
-.tab-background, .tab-stack{
+.tab-background,
+.tab-stack {
   transition: all 0.3s ease-in-out !important;
 }
 
-.tab-close-button.close-icon{
+.tab-close-button.close-icon {
   display: none !important;
 }
 
-.tab-stack:hover{
-  .tab-background{
+.tab-stack:hover {
+  .tab-background {
     background-color: light-dark(#0001, #fff1) !important;
   }
 }
 
-
-.search-one-offs{
+.search-one-offs {
   display: none !important;
 }
 
-.tools-and-extensions.actions-list{
+.tools-and-extensions.actions-list {
   opacity: 0 !important;
   transition: opacity 0.4s ease-in-out;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
 /* no new tab */
-#tabs-newtab-button, #vertical-pinned-tabs-container-separator{
+#tabs-newtab-button,
+#vertical-pinned-tabs-container-separator {
   display: none !important;
 }
 
-#navigator-toolbox:has(#urlbar:not([open])){
+#navigator-toolbox:has(#urlbar:not([open])) {
   position: absolute !important;
   z-index: 100000 !important;
-/*   width: 100vw !important; */
+  /*   width: 100vw !important; */
   width: fit-content !important;
 }
 
-#nav-bar{
+#nav-bar {
   transition: all 0.3s ease-in-out 0.3s !important;
-  #urlbar-container #urlbar:not([open]){
+  #urlbar-container #urlbar:not([open]) {
     width: 160px !important;
     margin: auto 5px !important;
     border-radius: 100px !important;
-    
-    
-    hbox{
+
+    hbox {
       border-radius: 100px !important;
     }
-    
-/*     #tracking-protection-icon-container, #identity-box{
+
+    /*     #tracking-protection-icon-container, #identity-box{
       display: none !important;
     } */
   }
-  
-  
-  .unified-extensions-item, #unified-extensions-button, #PanelUI-button, #sidebar-button{
+
+  .unified-extensions-item,
+  #unified-extensions-button,
+  #PanelUI-button,
+  #sidebar-button {
     opacity: 0 !important;
     transition: opacity 0.3s ease-in-out !important;
   }
-  
-  .titlebar-buttonbox-container{
-/*     width: 0 !important; */
+
+  .titlebar-buttonbox-container {
+    /*     width: 0 !important; */
     opacity: 0 !important;
     transition: width 0.3s ease-in-out 0.2s !important;
 
-    .titlebar-button{
+    .titlebar-button {
       width: 30px;
       height: 30px;
       border-radius: 0.5em;
@@ -205,58 +220,58 @@ body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)), bod
   }
 }
 
+#navigator-toolbox {
+  left: -600px !important;
+}
 
-  #navigator-toolbox{
-    left: -600px !important;
-  }
-
-#urlbar-container{
+#urlbar-container {
   width: fit-content !important;
   flex: none !important;
   margin-right: 170px !important;
 }
 
+body:has(#urlbar:not([open])):has(
+    #urlbar:not([open]):hover,
+    #nav-bar-customization-target:hover,
+    .titlebar-buttonbox-container:hover,
+    #nav-bar:hover,
+    toolbarbutton[open="true"]
+  ) {
+  .titlebar-buttonbox-container {
+    width: 150px !important;
+    padding-left: 20px !important;
+    opacity: 1 !important;
+  }
 
-body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customization-target:hover, .titlebar-buttonbox-container:hover, #nav-bar:hover, toolbarbutton[open="true"]){
-  
-    .titlebar-buttonbox-container{
-      width: 150px !important;
-      padding-left:20px !important;
-      opacity: 1 !important;
-    }
-    
-    
-    #unified-extensions-button, #PanelUI-button, #sidebar-button{
-      opacity: 1 !important;
-    }
-  
-  
-  #navigator-toolbox{
+  #unified-extensions-button,
+  #PanelUI-button,
+  #sidebar-button {
+    opacity: 1 !important;
+  }
+
+  #navigator-toolbox {
     left: 0px !important;
   }
-  
-  #nav-bar{
+
+  #nav-bar {
     background-color: var(--toolbar-field-background-color) !important;
     opacity: 1 !important;
     border-radius: 0.75em !important;
   }
-  
 }
 
-
-#back-button, #forward-button{
+#back-button,
+#forward-button {
   display: none !important;
 }
 
-
-
-tab[pinned="true"]{
-  .tab-background{
+tab[pinned="true"] {
+  .tab-background {
     background-color: light-dark(#fff4, #0004) !important;
   }
-  &:hover .tab-background{
-      background-color: light-dark(#0002, #fff2) !important;
-    }
+  &:hover .tab-background {
+    background-color: light-dark(#0002, #fff2) !important;
+  }
 }
 
 /* #navigator-toolbox{
@@ -271,8 +286,6 @@ tab[pinned="true"]{
     
   }
 } */
-
-
 
 /* trackpad gestures*/
 tabpanels .browserStack browser {
@@ -368,86 +381,84 @@ slot:nth-child(1) {
 
 /* pinned tabs */
 
- #vertical-pinned-tabs-container{
-  background-color:  light-dark(#0001, #fff1) !important;
+#vertical-pinned-tabs-container {
+  background-color: light-dark(#0001, #fff1) !important;
   border-radius: 14px;
   padding: 0px !important;
 }
 
-[expanded=""] #vertical-pinned-tabs-container{
+[expanded=""] #vertical-pinned-tabs-container {
   margin: 0 4px !important;
 }
 
-#tabbrowser-tabs:not([expanded]){
-  tab, tab-group{
+#tabbrowser-tabs:not([expanded]) {
+  tab,
+  tab-group {
     scale: 1.1 !important;
   }
 }
 
-body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)){
-  
-  #sidebar-main{
-  /*   position: fixed !important; */
+body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)) {
+  #sidebar-main {
+    /*   position: fixed !important; */
     padding-top: 50px !important;
   }
- 
 }
 
-
-#vertical-spacer{
+#vertical-spacer {
   display: none !important;
 }
 
-#urlbar{
+#urlbar {
   margin-left: 0 !important;
   padding-left: 0 !important;
   left: 0 !important;
 }
 
 /* sidebar footer */
-.expanded-button{
+.expanded-button {
   display: none !important;
 }
 
 /* no mute icon */
-.tab-icon-overlay[soundplaying]{
+.tab-icon-overlay[soundplaying] {
   display: none !important;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: inset 0 0 10px 10px color-mix(in srgb, var(--focus-outline-color), transparent 80%);
-    }
+  0% {
+    transform: scale(1);
+    box-shadow: inset 0 0 10px 10px
+      color-mix(in srgb, var(--focus-outline-color), transparent 80%);
+  }
 
-    70% {
-        transform: scale(1);
-        box-shadow: inset 0 0 0 2px  color-mix(in srgb, var(--focus-outline-color), transparent 50%);
-    }
+  70% {
+    transform: scale(1);
+    box-shadow: inset 0 0 0 2px
+      color-mix(in srgb, var(--focus-outline-color), transparent 50%);
+  }
 
-    100% {
-        transform: scale(1);
-        box-shadow: inset 0 0 10px 10px  color-mix(in srgb, var(--focus-outline-color), transparent 80%);
-    }
+  100% {
+    transform: scale(1);
+    box-shadow: inset 0 0 10px 10px
+      color-mix(in srgb, var(--focus-outline-color), transparent 80%);
+  }
 }
 
-
-
-tab[soundplaying] .tab-background{
+tab[soundplaying] .tab-background {
   animation: pulse 2s infinite ease-in-out;
 }
 
 /*  bg tint */
-#main-window{
-/*   background-color: light-dark(#fff5 , #0005) !important;       */
-/*   background-color: #2e3440 !important; */
+#main-window {
+  /*   background-color: light-dark(#fff5 , #0005) !important;       */
+  /*   background-color: #2e3440 !important; */
 }
 
 /* urlbar mods */
-#star-button-box{
+#star-button-box {
   display: none !important;
 }
-
 
 /* Modify new tab entry */
 [label="Super Speedy Dial"] {
@@ -467,48 +478,55 @@ tab[soundplaying] .tab-background{
 }
 
 /* no extension url */
-#identity-box.extensionPage, #tracking-protection-icon-container{
-  display:  none !important;
+#identity-box.extensionPage,
+#tracking-protection-icon-container {
+  display: none !important;
 }
 
-#urlbar{
+#urlbar {
   padding-left: 10px !important;
 }
 
-#nav-bar{
+#nav-bar {
   margin-left: 0.25em !important;
   margin-top: 0.25em !important;
-    max-width: fit-content !important;
-  
-  
-  .unified-extensions-item{
+  max-width: fit-content !important;
+
+  .unified-extensions-item {
     width: 0px !important;
     padding: 0 !important;
     margin: 0 !important;
     opacity: 0 !important;
     transition: all 0.3s ease-in-out !important;
   }
-  
-  &:has(#unified-extensions-button:hover, .unified-extensions-item:hover, [open], #PanelUI-button:hover){
-  .unified-extensions-item{
-    width: 30px !important;
-    padding: inherit !important;
-    margin: initial !important;
-    opacity: 1 !important;
+
+  &:has(
+    #unified-extensions-button:hover,
+    .unified-extensions-item:hover,
+    [open],
+    #PanelUI-button:hover
+  ) {
+    .unified-extensions-item {
+      width: 30px !important;
+      padding: inherit !important;
+      margin: initial !important;
+      opacity: 1 !important;
     }
   }
-  
-  [widget-id="sidebar-button"]{
+
+  [widget-id="sidebar-button"] {
     display: none !important;
   }
-  
-  #nav-bar-customization-target{
+
+  #nav-bar-customization-target {
     max-width: fit-content !important;
   }
 }
 
 /* =================== context menu ===================== */
-#contentAreaContextMenu, #toolbar-context-menu, #tabContextMenu{
+#contentAreaContextMenu,
+#toolbar-context-menu,
+#tabContextMenu {
   #context-savepage,
   #context-pocket,
   #context-sendpagetodevice,
@@ -523,12 +541,10 @@ tab[soundplaying] .tab-background{
   #context-bookmarklink,
   #context-savelink,
   #context-savelinktopocket,
-  
   #toolbar-context-openANewTab,
   #toolbar-context-reloadSelectedTab,
   #toolbar-context-bookmarkSelectedTab,
   #toolbar-context-undoCloseTab,
-  
   #context_bookmarkTab,
   #context_moveTabOptions,
   .share-tab-url-item,
@@ -537,117 +553,135 @@ tab[soundplaying] .tab-background{
   #context_closeTab,
   #context_closeDuplicateTabs,
   #context_closeTabOptions,
-  #context_undoCloseTab
-  {
-    display: none !important;
-  }
-  
-}
-
-#contentAreaContextMenu, #toolbar-context-menu{
-  menu.menu-iconic{
+  #context_undoCloseTab {
     display: none !important;
   }
 }
 
+#contentAreaContextMenu,
+#toolbar-context-menu {
+  menu.menu-iconic {
+    display: none !important;
+  }
+}
 
 /* ================================ tab groups ==================================== */
 
-.tab-group-label-container{
+.tab-group-label-container {
   padding: 0 !important;
   transition: all 0.2s ease-in-out !important;
 }
 
-
-tab-group tab .tab-background{
+tab-group tab .tab-background {
   transition: all 0.2s ease-in-out !important;
 }
 
-tab-group:not(:has([selected])) .tab-group-label{
-/*   border: none !important; */
+tab-group:not(:has([selected])) .tab-group-label {
+  /*   border: none !important; */
   outline: none !important;
   transition: all 0.2s ease-in-out !important;
-    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 50%,
+    transparent
+  ) !important;
   color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
 }
 
-[expanded=""] .tab-group-label{
+[expanded=""] .tab-group-label {
   border-radius: 7px 7px 0 0 !important;
   width: 100% !important;
   text-align: left !important;
   padding-left: 10px !important;
-  
-  &:hover{
+
+  &:hover {
     padding-left: 20px !important;
   }
 }
 
-[collapsed=""] .tab-group-label{
-  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+[collapsed=""] .tab-group-label {
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 20%,
+    transparent
+  ) !important;
   color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
   border-radius: 7px !important;
-  
-  &:hover{
-    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+
+  &:hover {
+    background: color-mix(
+      in srgb,
+      var(--tab-group-color) 50%,
+      transparent
+    ) !important;
     color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
   }
 }
 
-[expanded=""] tab-group:not([collapsed=""]){
+[expanded=""] tab-group:not([collapsed=""]) {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  .tab-group-label{
-  border-top: 1px solid var(--tab-group-color-invert) !important;
-  border-left: 1px solid var(--tab-group-color-invert) !important;
-  border-right: 1px solid var(--tab-group-color-invert) !important;
+  .tab-group-label {
+    border-top: 1px solid var(--tab-group-color-invert) !important;
+    border-left: 1px solid var(--tab-group-color-invert) !important;
+    border-right: 1px solid var(--tab-group-color-invert) !important;
   }
-  
 }
 
-.tab-group-line{
+.tab-group-line {
   display: none !important;
 }
 
-[expanded=""] tab-group tab{
-  .tab-background{
-  border-left: 1px solid var(--tab-group-color-invert) !important;
-  border-right: 1px solid var(--tab-group-color-invert) !important;
+[expanded=""] tab-group tab {
+  .tab-background {
+    border-left: 1px solid var(--tab-group-color-invert) !important;
+    border-right: 1px solid var(--tab-group-color-invert) !important;
     margin-left: 0 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+    background: color-mix(
+      in srgb,
+      var(--tab-group-color) 50%,
+      transparent
+    ) !important;
     outline: none !important;
   }
-  .tab-label{
+  .tab-label {
     color: light-dark(#000, #fff) !important;
   }
-  
-  &[selected="true"]{
-    .tab-background{
-    background: color-mix(in srgb, var(--tab-group-color-invert) 40%, transparent) !important;
+
+  &[selected="true"] {
+    .tab-background {
+      background: color-mix(
+        in srgb,
+        var(--tab-group-color-invert) 40%,
+        transparent
+      ) !important;
     }
   }
-  
-  &:hover{
-    .tab-background{
-    background: color-mix(in srgb, var(--tab-group-color-invert) 50%, transparent) !important;
+
+  &:hover {
+    .tab-background {
+      background: color-mix(
+        in srgb,
+        var(--tab-group-color-invert) 50%,
+        transparent
+      ) !important;
     }
   }
 }
 
-
-
-tab-group tab:nth-last-child(1) .tab-background{
+tab-group tab:nth-last-child(1) .tab-background {
   border-radius: 0 0 0.75em 0.75em !important;
   border-bottom: 1px solid var(--tab-group-color-invert) !important;
 }
 
-tab-group .tab-content{
+tab-group .tab-content {
   padding-left: 0.5em !important;
 }
 
-tab-group tab{
+tab-group tab {
   padding: 0 !important;
 }

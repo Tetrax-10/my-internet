@@ -54,17 +54,17 @@ ytd-app:not([guide-persistent-and-visible=""])
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
-ytd-alert-with-button-renderer{
+ytd-alert-with-button-renderer {
   align-items: center !important;
   justify-content: center !important;
 }
 
 /* yt-clean side guide */
 ytd-guide-section-renderer:has(
-    [title="YouTube Studio"],
-    [title="Sport"],
-    [title="Settings"]
-  ),
+  [title="YouTube Studio"],
+  [title="Sport"],
+  [title="Settings"]
+),
 ytd-guide-renderer #footer {
   display: none !important;
 }
@@ -129,12 +129,12 @@ body:not(:has([mini-guide-visible=""])) {
   }
 }
 
-ytd-alert-with-button-renderer{
+ytd-alert-with-button-renderer {
   align-items: center !important;
   justify-content: center !important;
 }
 
-ytd-two-column-browse-results-renderer[page-subtype="playlist"]{
+ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   width: fit-content !important;
 }
 
@@ -154,7 +154,6 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"]{
 #voice-search-button {
   display: none !important;
 }
-
 
 /* yt-Hide filter chips */
 #chips-wrapper {
@@ -235,7 +234,7 @@ ytd-merch-shelf-renderer,
 }
 
 *::-webkit-scrollbar {
-      display: none !important;
+  display: none !important;
 }
 
 /* yt-Transparent video background */
@@ -263,7 +262,6 @@ ytd-merch-shelf-renderer,
 #cinematics-container {
   display: none !important;
 }
-
 
 /* yt-Theatre: zen view */
 [theater=""] #full-bleed-container {
@@ -414,7 +412,6 @@ ytd-rich-item-renderer[is-in-first-column=""] {
     var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)
   ) !important;
 }
-
 
 /* Immersive search */
 #page-manager,

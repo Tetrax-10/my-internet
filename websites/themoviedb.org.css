@@ -109,7 +109,11 @@ body,
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* @ ------------------------- light mode ------------------------- */
@@ -395,7 +399,10 @@ div.column_wrapper div.settings_panel, /* @ search results page left side panel 
 
 /* @ misc */
 .card /* @ all cards */ {
-  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  background-color: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
   border-color: transparent !important;
   box-shadow: none !important;
 }
@@ -413,7 +420,11 @@ section.inner_content div.selected h3 a /* @ section selector selected text colo
   -webkit-text-fill-color: rgb(var(--tmdbDarkBlue)) !important;
 }
 section.inner_content div.selector div.background /* @ section selector selected background */ {
-  background: linear-gradient(to right, rgba(var(--tmdbLighterGreen), 1) 0%, rgba(var(--tmdbLightGreen), 1) 100%) !important;
+  background: linear-gradient(
+    to right,
+    rgba(var(--tmdbLighterGreen), 1) 0%,
+    rgba(var(--tmdbLightGreen), 1) 100%
+  ) !important;
 }
 
 /* @ top bar language box */
@@ -431,7 +442,10 @@ section.search div.k-animation-container {
 
 /* @ search button in below search bar */
 .inner_search_wrapper + input {
-  background: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  background: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
 }
 
 /* @ cards bottom padding */
@@ -486,7 +500,11 @@ div.no_image_holder {
 }
 
 /* @ censor certification just below the title */
-section.inner_content div.header div.single_column div.facts span.certification {
+section.inner_content
+  div.header
+  div.single_column
+  div.facts
+  span.certification {
   border: 2px solid rgba(var(--trans-theme-primary-text), 0.6) !important;
   border-radius: 5px !important;
 }
@@ -510,7 +528,10 @@ div.consensus div.outer_ring {
 /* @ award card */
 .bg-award-banner {
   background-image: url(/assets/2/awards-preview/banner-stars-f3d8dd620e03ae0ddb6c0cd14e0a31e6bfc233b45898569f940237027db16ea3.svg) !important;
-  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  background-color: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
 }
 
 /* @ content divider */
@@ -612,7 +633,10 @@ div.column_wrapper ul.panel li a.selected {
 
 div.column_wrapper ul.panel.kendo li.sub span, div.column_wrapper ul.panel.with_counts li span, /* @ left side panel image count */
 div.column_wrapper ul.panel.with_counts li.selected span, div.column_wrapper ul.panel.with_counts li:hover span, ul.panel.kendo.k-panelbar ul > .k-item.selected span, ul.panel.kendo.k-panelbar ul > .k-item:hover span /* @ left side panel image count (hover) */ {
-  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  background-color: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
   color: unset !important;
 }
 
@@ -637,12 +661,16 @@ section.inner_content ul.images li.card.processing::before {
   background: repeating-linear-gradient(
     transparent 0,
     transparent 7.5px,
-    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 7.5px,
-    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 15px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl))
+      7.5px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl))
+      15px,
     transparent 15px,
     transparent 22.5px,
-    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 22.5px,
-    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 30px
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl))
+      22.5px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl))
+      30px
   ); /* @ using !important won't work */
 }
 /* @ processing image card image padding */
@@ -651,13 +679,21 @@ section.inner_content ul.images li.card.processing {
 }
 
 /* @ image card bottom overlay bg (like and dislike) */
-section.inner_content ul.images.compact li.card div.image_content div.rating_info {
+section.inner_content
+  ul.images.compact
+  li.card
+  div.image_content
+  div.rating_info {
   background: rgba(var(--trans-theme-secondary-bg), 0.2) !important;
   backdrop-filter: blur(5px) !important;
 }
 
 /* @ logo card bottom overlay bg (like and dislike) */
-section.inner_content ul.images.compact.logos li.card.ok div.image_content:hover div.rating_info {
+section.inner_content
+  ul.images.compact.logos
+  li.card.ok
+  div.image_content:hover
+  div.rating_info {
   background: unset !important;
   backdrop-filter: unset !important;
 }
@@ -742,7 +778,10 @@ table.credit_group tbody td.role a:hover {
 
 .network_wrap {
   .k-upload, .k-upload .k-dropzone, .k-upload .k-file, .k-upload .k-upload-dropzone, .k-upload .k-upload-files, .k-window /* @ edit page logos upload box */ {
-    background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+    background-color: rgba(
+      var(--trans-theme-primary-bg),
+      var(--trans-theme-transparency-lvl)
+    ) !important;
     border-color: transparent !important;
   }
 }
@@ -1032,7 +1071,10 @@ body:has(> div.header > h2 > a[href^="/admin"]) {
   div.new input[type="text"],
   div.new textarea {
     border: unset !important;
-    background: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+    background: rgba(
+      var(--trans-theme-primary-bg),
+      var(--trans-theme-transparency-lvl)
+    ) !important;
     box-shadow: unset !important;
     color: rgb(var(--trans-theme-primary-text)) !important;
   }
@@ -1080,7 +1122,10 @@ div.you div.message a {
 
 /* @ graph bar */
 #histogram svg > g > path[fill^="#"] {
-  fill: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  fill: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
 }
 
 /* @ ------------------------- fix bible page ------------------------- */
@@ -1095,9 +1140,18 @@ section.main_content section div.note * {
 
 /* @ alter the variables */
 [data-color-mode="dark"] {
-  --gray10: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
-  --gray15: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
-  --gray20: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  --gray10: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
+  --gray15: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
+  --gray20: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
 }
 
 /* @ ------------------------- fix context menu ------------------------- */
@@ -1126,7 +1180,10 @@ span.youtube_search div.sub_menu /* @ edit page videos "Search YouTube" hover me
 .k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu-group .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, /* @ collections page sort menu (when hover on submenu) */
 section.search .k-list-item.k-focus, /* @ home page top search (keyboard navigation) */
 div.settings_content div.group p:hover /* @ home page top bar profile menu hover */ {
-  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  background-color: rgba(
+    var(--trans-theme-primary-bg),
+    var(--trans-theme-transparency-lvl)
+  ) !important;
 }
 
 /* @ home page top bar profile menu hover "view profile" text */
@@ -1386,7 +1443,8 @@ table.card.releases tr.sub th /* @ release dates page heading */ {
   /* @ blue icons */
   div.carton div.post_actions a.true span.glyphicons_v2,
   div.carton div.post_actions a:hover span.glyphicons_v2 {
-    filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg) brightness(101%) contrast(99%) !important;
+    filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg)
+      brightness(101%) contrast(99%) !important;
   }
 
   /* @ discussions page private discussion lock */
